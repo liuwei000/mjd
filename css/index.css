@@ -354,12 +354,139 @@ body {
 .content .box .box-bottom div:nth-child(-n+3) {
     border-right: 1px solid #ddd;
 }
+
+.content .love-floor {
+    margin: 10px;
+}
+
+.content .love-floor .tittle {
+    width: 100%;
+    height: 35px;
+}
+
+.content .love-floor .tittle img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .love-floor li {
+    float: left;
+    width: 50%;
+    height: 271px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.content .love-floor li img {
+    width: 176px;
+}
+
+.content .love-floor li .product-text {
+    box-sizing: border-box;
+    height: 31px;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    color: #232326;
+    margin-top: 5px;
+    line-height: 16px;
+    margin-bottom: 3px;
+    padding: 0 4px;
+}
+
+.content .love-floor li .product-text img {
+    width: 22px;
+    height: 13px;
+    margin-right: 4px;
+}
+
+.content .love-floor li .product-info {
+    position: relative;
+    font-size: 13px;
+    height: 26px;
+}
+
+.content .love-floor li .product-info .product-price {
+    color: #f23030;
+    display: inline-block;
+    padding: 0 5px 0 4px;
+    position: relative;
+    top: 1px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.content .love-floor li .product-info .product-price .big-price {
+    font-size: 16px;
+}
+
+.content .love-floor li .product-info .rec-price-tag {
+    border: 1px solid #e4393c;
+    color: #e4393c;
+    font-size: 10px;
+    padding: 0 3px;
+    margin-right: 5px;
+}
+
+.content .love-floor li .product-info .guess-button {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    text-align: center;
+    color: #686868;
+    font-size: 12px;
+    width: 49px;
+    height: 24px;
+    line-height: 25px;
+}
+
+.content .love-floor li .product-info .guess-button::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+
+.content .love-floor li .product-info .plus-price {
+    color: #232326;
+    display: inline-block;
+    height: 14px;
+    outline: 14px;
+    position: relative;
+    font-size: 13px;
+    padding-left: 4px;
+    vertical-align: middle;
+}
+
+.content .love-floor li .product-info .plus-price::after {
+    background: url(../images/plus.png) no-repeat;
+    background-size: 28px 9px;
+    content: "";
+    height: 9px;
+    width: 28px;
+    position: absolute;
+    top: 1px;
+    right: -31px;
+}
 /* content end */
 
 /* space start */
 .space {
     width: 100%;
-    height: 50px;
+    height: 30px;
     margin-bottom: 50px;
     clear: both;
 }
