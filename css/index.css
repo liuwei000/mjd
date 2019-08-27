@@ -52,6 +52,9 @@ body {
     float: right;
 }
 
+li {
+    list-style: none;
+}
 /* 公共样式 end  */
 
 /* tip start */
