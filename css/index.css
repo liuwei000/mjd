@@ -1,0 +1,360 @@
+/* 公共样式 start */
+
+/*点击高亮我们需要清除清除  设置为transparent 完成透明*/
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+
+/*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*/
+
+input {
+    -webkit-appearance: none;
+}
+
+/*禁用长按页面时的弹出菜单*/
+
+img, a {
+    -webkit-touch-callout: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    background-color: #f6f6f6;
+}
+
+/* 清除浮动 */
+
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 公共样式 end  */
+
+/* tip start */
+
+.tip {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 960px;
+    min-width: 340px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #333;
+    color: #fff;
+    z-index: 3;
+}
+
+.tip>div {
+    float: left;
+    height: 100%;
+}
+
+.tip div:nth-child(1) {
+    width: 8%;
+}
+
+.tip div:nth-child(1) img {
+    width: 10px;
+    height: 10px;
+}
+
+.tip div:nth-child(2) {
+    width: 10%;
+}
+
+.tip div:nth-child(2) img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.tip div:nth-child(3) {
+    width: 57%;
+}
+
+.tip div:nth-child(4) {
+    width: 25%;
+    background-color: #F63515;
+}
+
+/* tip end */
+
+/* header start */
+
+.search {
+    position: fixed;
+    left: 0;
+    top: 45px;
+    width: 100%;
+    max-width: 960px;
+    min-width: 340px;
+    height: 44px;
+    margin: 0 auto;
+    line-height: 44px;
+    text-align: center;
+    background-color: #c82519;
+    color: #fff;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.search .btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 44px;
+}
+
+.search .btn img {
+    margin: 14px 0 0 11px;
+    width: 20px;
+    height: 18px;
+}
+
+.search .ipt {
+    position: relative;
+    height: 30px;
+    margin: 7px 50px;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+}
+
+.search .ipt img {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 15px;
+}
+
+.search .ipt::after {
+    content: '';
+    position: absolute;
+    border-right: 1px solid #ddd;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    height: 16px;
+}
+
+.search .ipt i {
+    position: absolute;
+    left: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 15px;
+    background: url(../images/jd-sprites.png) no-repeat;
+    background-position: -80px 0;
+    background-size: 200px;
+}
+
+.search .login {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 44px;
+    padding-right: 5px;
+}
+
+/* header end */
+
+/* content start */
+
+.content {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 960px;
+    min-width: 340px;
+    height: 2000px;
+    margin: 89px auto 0;
+    overflow: hidden;
+}
+
+.content .slider-bg {
+    position: absolute;
+    left: -25%;
+    width: 150%;
+    height: 100px;
+    background-image: linear-gradient(0deg, #f1503b, #c82519 50%);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.content .slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 154px;
+    margin: 5px 10px 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content .slider img {
+    width: 100%;
+    height: 154px;
+}
+
+.content .mall {
+    margin-top: 165px;
+}
+
+.content .mall a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    color: #333;
+}
+
+.content .mall a img {
+    width: 44px;
+    margin: 10px 0 5px;
+}
+
+.content .graphic {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+.content .graphic>div {
+    float: left;
+    width: 33.33%;
+    height: 110px;
+}
+
+.content .graphic>div img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .floor {
+    margin-top: 10px;
+}
+
+.content .floor .tittle {
+    width: 100%;
+    height: 38px;
+}
+
+.content .floor .tittle img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .floor .box {
+    height: 266px;
+    margin: 0 12px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.content .box>div {
+    height: 50%;
+}
+
+.content .box .box-top>div {
+    float: left;
+    box-sizing: border-box;
+}
+
+.content .box .box-top>div h5 {
+    margin: 10px 0 5px 10px;
+    color: skyblue;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.content .box .box-top>div p {
+    margin: 0 0 5px 10px;
+    color: #666771;
+    font-size: 16px;
+}
+
+.content .box .box-top>div img {
+    width: 66px;
+    height: 66px;
+    margin-left: 20px;
+}
+
+.content .box .box-top .left {
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #ddd;
+}
+
+.content .box .box-top .right {
+    width: 50%;
+    height: 100%;
+}
+
+.content .floor .box .no {
+    border-top: 0px;
+}
+
+.content .box .box-bottom {
+    border-top: 1px solid #ddd;
+}
+
+.content .box .box-bottom>div {
+    float: left;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.content .box .box-bottom>div h5 {
+    font-size: 18px;
+    margin: 5px 0 5px 10px
+}
+
+.content .box .box-bottom>div p {
+    font-size: 13px;
+    margin: 0 0 10px 10px;
+    color: #666771;
+}
+
+.content .box .box-bottom>div img {
+    width: 66px;
+    height: 66px;
+    margin-left: 10px;
+}
+
+.content .box .box-bottom div:nth-child(-n+3) {
+    border-right: 1px solid #ddd;
+}
+/* content end */
