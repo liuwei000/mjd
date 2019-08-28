@@ -57,6 +57,19 @@ li {
 }
 /* 公共样式 end  */
 
+/* stick start */
+.stick {
+    position: fixed;
+    right: 10px;
+    bottom: 80px;
+    width: 38px;
+    height: 38px;
+    z-index: 5;
+    background: url(../images/stick.png) no-repeat;
+    background-size: 100%;
+}
+/* stick end */
+
 /* tip start */
 
 .tip {
