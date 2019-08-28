@@ -231,6 +231,7 @@ li {
     position: absolute;
     left: 0;
     top: 0;
+    width: calc(100% - 20px);
     height: 154px;
     margin: 5px 10px 5px;
     border-radius: 10px;
